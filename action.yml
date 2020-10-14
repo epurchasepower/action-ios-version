@@ -1,0 +1,18 @@
+name: 'Get iOS Version'
+description: 'Get the MARKETING_VERSION from the ios/Project.xcodeproj/project.pbxproj file for the given scheme'
+inputs:
+  xcodeprojPath:
+    description: 'Path to iOS project folder'
+    required: true
+  bundleId:
+    description: 'Bundle ID of configuration from which to extract value'
+    required: true
+  scheme:
+    description: 'Scheme from which to extract value'
+    required: true
+outputs:
+  version:
+    description: 'Value of MARKETING_VERSION'
+runs:
+  using: 'node12'
+  main: 'index.js'

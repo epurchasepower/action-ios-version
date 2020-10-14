@@ -1,0 +1,25 @@
+{
+  "name": "action-ios-version",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epurchasepower/action-ios-version.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epurchasepower/action-ios-version/issues"
+  },
+  "homepage": "https://github.com/epurchasepower/action-ios-version#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "xcode": "^3.0.1"
+  }
+}
