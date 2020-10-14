@@ -6,7 +6,7 @@ try {
   const project = core.getInput('xcodeprojPath')
   const bundleId = core.getInput('bundleId')
   const scheme = core.getInput('scheme')
-  parse(project, scheme, (err, version) => {
+  parse(project, bundleId, scheme, (err, version) => {
     if (err) {
       core.setFailed(err.message)
     } else {
